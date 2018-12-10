@@ -1,21 +1,21 @@
-#V0.0.5
+# V0.0.5
 
-#Caleandar 
+# Caleandar 
 JavaScript Custom Calendar 
 
-##How to use
+## How to use
 At it's simplest, call the `calendar()` function with the following 3 optional parametars:
 ```
 caleandar(element, events, settings);
 ```
 Where `element` is an HTML element, `events` is an array of event objects and `settings` is an object of settings. Pretty straightforward so far.
 
-##Element
+## Element
 A single HTML element.
-##Examples:
+## Examples:
 `var element = caleandar(document.querySelector('#caleandar'));`
 
-##Events
+## Events
 An array of event objects to be placed on their respective dates on the calendar.
 
 Using anonymous functions to instantiate on click:
@@ -29,7 +29,7 @@ var events = [
 ];
 ```
 
-##Settings
+## Settings
 Below are all the possible settings attributes with example values.
 ```
 var settings={

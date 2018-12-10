@@ -2,7 +2,7 @@
 
 # Caleandar 
 JavaScript Custom Calendar 
-
+[demo URL](https://mahendralife.github.io/custom_calendar_javascript/)
 ## How to use
 At it's simplest, call the `calendar()` function with the following 3 optional parametars:
 ```

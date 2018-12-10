@@ -1,0 +1,109 @@
+.caleandar-main{
+  width: 330px;
+}
+.caleandar-main a{
+  color: #333;
+  font-weight: bold;
+}
+  .caleandar-datetime{
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .caleandar-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+  }
+  .caleandar-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .caleandar-nav:hover{
+    cursor: pointer;
+  }
+  .caleandar-nav:hover svg{
+      fill: #666;
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+   
+.caleandar-labels, .caleandar-days {
+  padding-left: 0;
+}
+  .caleandar-label, .caleandar-day {
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+  }
+  .caleandar-day.today .caleandar-number {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #666;
+    color: #fff;
+  }
+  .caleandar-day.disableDay{
+    opacity: 0.5;
+  }
+  .caleandar-day.nextMonth, .caleandar-day.prevMonth{
+    opacity: 0.33;
+  }
+    .caleandar-number{
+      position: relative;
+      margin: 5px;
+      padding: 5px;
+    }
+      .caleandar-title{
+        position: absolute;
+        z-index: 5;
+        display: none;
+        top: 30px;
+        left: 0;
+        padding: 5px 10px;
+        background: #fff;
+        white-space: nowrap;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      .caleandar-number:hover .caleandar-title{
+        display: block;
+      }
+      .caleandar-title::before{
+        content: '';
+        position: absolute;
+        top: -7.5px; left: 7.5px;
+        width: 0;
+        height: 0;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+
+        border-bottom: 7.5px solid #ccc;
+      }
+      .caleandar-number.eventday{
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        border: 1px solid #999;
+      }
+      .caleandar-number.eventday:hover{
+        cursor: pointer;
+        background: #eee;
+      }
+      .today .caleandar-number.eventday:hover{
+        background: #888;
+      }

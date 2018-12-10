@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/calendar.css" />
+  </head>
+  <body>
+    <div id="caleandar"> <!-- custom calendar --> </div>
+    <script type="text/javascript" src="js/caleandar.js"></script>
+<script>
+
+  var events = [
+      {'Date': new Date(2018, 11, 7), 'Title': 'Doctor appointment at 3:25pm.'},
+      {'Date': new Date(2018,11, 18), 'Title': 'New Garfield movie comes out!', 
+      'Link': 'https://garfield.com'}, {'Date': new Date(2018, 11, 27), 
+      'Title': '25 year anniversary', 'Link': 'https://www.google.com.com'},
+    ];
+
+      var settings = {};
+      var element = document.getElementById('caleandar');
+      caleandar(element, events, settings);
+</script>
+  </body>
+</html>
